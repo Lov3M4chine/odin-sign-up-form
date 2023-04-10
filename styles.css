@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'half-life-font';
+    src: url(fonts/half-life-font/halflife.ttf);
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -16,6 +21,32 @@ html, body {
     background-repeat: no-repeat;
     height: 100%;
     flex-basis: 33.33%;
+    position: relative;
+}
+
+.logo-container {
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position:absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+}
+
+.half-life-logo {
+    height: 30%;
+    vertical-align: middle;
+    fill: white;
+}
+
+.logo-text {
+    font-family: "half-life-font";
+    color: white;
+    font-size: 42px;
+    margin-left: 15px;
 }
 
 .sign-up-container {
