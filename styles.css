@@ -20,7 +20,7 @@ html, body {
     background-position: center;
     background-repeat: no-repeat;
     height: 100%;
-    flex-basis: 33.33%;
+    flex-basis: 40%;
     position: relative;
 }
 
@@ -32,7 +32,6 @@ html, body {
     align-items: center;
     position:absolute;
     top: 8%;
-    padding: 10px;
     width: 100%;
     height: 10%;
 }
@@ -46,21 +45,64 @@ html, body {
 .logo-text {
     font-family: "half-life-font";
     color: white;
-    font-size: 42px;
+    font-size: 1.8vw;
     margin-left: 15px;
 }
 
 .sign-up-container {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
+    align-items: stretch;
 }
 
-.top-text-container,
-.input-field-container,
-.submit-button-container {
-    flex-grow: 1;
+.top-text-container {
+    background-color: rgba(0, 0, 255, .5);
+    color: white;
+    font-size: 1.8vw;
+    padding: 5%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: end;
+    height: 33.33%;
+}
+
+.input-field-container {
+    display: flex;
+    flex-direction: column;
+    height: 33.33%;
+}
+
+.input-field-text {
+    align-self: flex-start;
+    font-size: 1.8vw;
+}
+
+.input-field {
+
+}
+
+.input-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+label {
+    font-size: 24px;
+}
+
+input {
+    font-size: 24px;;
+}
+
+.submit-button-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 0, 0, .5);
+    height: 33.33%
 }
