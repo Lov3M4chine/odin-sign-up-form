@@ -75,10 +75,11 @@ html, body {
 .input-field-text {
     align-self: flex-start;
     font-size: 1.8vw;
+    padding-left: 5%;
 }
 
 .input-field {
-
+    padding-left: 5%;
 }
 
 .input-row {
@@ -93,7 +94,8 @@ html, body {
 }
 
 label {
-    font-size: 24px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 input {
@@ -105,4 +107,19 @@ input {
     flex-direction: column;
     background-color: rgba(255, 0, 0, .5);
     height: 33.33%
+}
+
+.create-account-button {
+    font-size: 1.8vw;
+    margin: 2%;
+    margin-left: 5%;
+    width: 20%;
+    border-radius: 5px;
+}
+
+.log-in {
+    font-size: 24px;
+    margin: 2%;
+    margin-left: 5%;
+    margin-top: 0%;
 }
