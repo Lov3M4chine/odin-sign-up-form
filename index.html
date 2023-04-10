@@ -22,42 +22,46 @@
             </div>
             <div class="input-field-container">
                 <div class="input-field-text">Let's do this!</div>
-                <div class="input-field">
-                    <div class="input-row">
-                        <div class="input-wrapper">
-                            <label for="first-name">First Name</label>
-                            <input type="text" name="first-name">
+                <form id="arcade-form" name="arcade" method="post">
+                    <div class="input-field">
+                        <div class="input-row">
+                            <div class="input-wrapper">
+                                <label for="first-name">*First Name</label>
+                                <input type="text" name="first-name" pattern="[A-Za-z]+" required>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="last-name">*Last Name</label>
+                                <input type="text" name="last-name" pattern="[A-Za-z]+" required>
+                            </div>
                         </div>
-                        <div class="input-wrapper">
-                            <label for="last-name">Last Name</label>
-                            <input type="text" name="last-name">
+                        <div class="input-row">
+                            <div class="input-wrapper">
+                                <label for="email">*Email</label>
+                                <input type="email" name="email" required>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="phone-number">Phone Number</label>
+                                <input type="number" name="phone-number">
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-wrapper">
+                                <label for="password">*Password</label>
+                                <input type="password" name="password" required>
+                            </div>
+                            <div class="input-wrapper">
+                                <label for="confirm-password">*Confirm Password</label>
+                                <input type="password" name="confirm-password" required>
+                            </div>
                         </div>
                     </div>
-                    <div class="input-row">
-                        <div class="input-wrapper">
-                            <label for="email">Email</label>
-                            <input type="email" name="email">
-                        </div>
-                        <div class="input-wrapper">
-                            <label for="phone-number">Phone Number</label>
-                            <input type="number" name="phone-number">
-                        </div>
-                    </div>
-                    <div class="input-row">
-                        <div class="input-wrapper">
-                            <label for="password">Password</label>
-                            <input type="password" name="password">
-                        </div>
-                        <div class="input-wrapper">
-                            <label for="confirm-password">Confirm Password</label>
-                            <input type="password" name="confirm-password">
-                        </div>
-                    </div>
-                </div>
+                </form>
             </div>
             <div class="submit-button-container">
-                <button class="create-account-button">Create Account</button>
-                <div class="log-in">Already have an account? Log in</div>
+                <button type="submit" form="arcade-form" class="create-account-button">Create Account</button>
+                <div class="log-in-text">Already have an account? 
+                    <button class="log-in-button"><a href="http://google.com">Log in</button>
+                </div>
             </div>
         </div>
     </div>
