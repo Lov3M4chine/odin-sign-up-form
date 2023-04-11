@@ -18,52 +18,53 @@
         </div>
         <div class="sign-up-container">
             <div class="top-text-container">
-                <div class="top-text">This is not a real online service! You know you need something like this is your life to help you realize your deepest dreams. Sign up now to get started. <br> <br> You know you want to.</div>
+                <div class="top-text">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started. <br> <br> You know you want to...</div>
             </div>
             <div class="input-field-container">
                 <div class="input-field-text">Let's do this!</div>
-                <form id="arcade-form" name="arcade" method="post">
+                <form id="arcade-form" name="arcade" action="">
                     <div class="input-field">
                         <div class="input-row">
                             <div class="input-wrapper">
                                 <label for="first-name">*First Name</label>
-                                <input type="text" name="first-name" pattern="[A-Za-z]+" required>
+                                <input type="text" name="first-name" pattern="^[A-Za-z]+([-'][A-Za-z]+)*$" required title="Hyphens and apostrophes are allowed">
                             </div>
                             <div class="input-wrapper">
                                 <label for="last-name">*Last Name</label>
-                                <input type="text" name="last-name" pattern="[A-Za-z]+" required>
+                                <input type="text" name="last-name" pattern="^[A-Za-z]+([-'][A-Za-z]+)*$" required title="Hyphens and apostrophes are allowed">
                             </div>
                         </div>
                         <div class="input-row">
                             <div class="input-wrapper">
                                 <label for="email">*Email</label>
-                                <input type="email" name="email" required>
+                                <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required title="ex. janedoe@gmail.com">
                             </div>
                             <div class="input-wrapper">
                                 <label for="phone-number">Phone Number</label>
-                                <input type="number" name="phone-number">
+                                <input type="number" name="phone-number" title="Numbers only please">
                             </div>
                         </div>
                         <div class="input-row">
                             <div class="input-wrapper">
                                 <label for="password">*Password</label>
-                                <input type="password" name="password" required>
+                                <input type="password" id="password" name="password" minlegnth="6" maxlength="32" required title="Passwords should be minimum 6 and maximum 32 characters">
                             </div>
                             <div class="input-wrapper">
                                 <label for="confirm-password">*Confirm Password</label>
-                                <input type="password" name="confirm-password" required>
+                                <input type="password" id="confirm-password" name="confirm-password" minlength="6" maxlength="32" title="Passwords should be minimum 6 and maximum 32 characters" required>
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="submit-button-container">
-                <button type="submit" form="arcade-form" class="create-account-button">Create Account</button>
+                <button type="submit" form="arcade-form" class="create-account-button" id="submit-button">Create Account</button>
                 <div class="log-in-text">Already have an account? 
-                    <button class="log-in-button"><a href="http://google.com">Log in</button>
+                    <button class="log-in-button">Log in</button>
                 </div>
             </div>
         </div>
     </div>
+    <script src="scripts.js"></script>
 </body>
 </html>
